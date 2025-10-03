@@ -53,7 +53,7 @@ export default function AlsoLike() {
             pagination={{
               clickable: true,
               bulletClass: 'swiper-pagination-bullet !bg-gray-400',
-              bulletActiveClass: 'swiper-pagination-bullet-active !bg-purple-500', // активный цвет
+              bulletActiveClass: 'swiper-pagination-bullet-active !bg-purple-500',
             }}
             loop={true}
             className='w-full h-full max-w-[370px]'

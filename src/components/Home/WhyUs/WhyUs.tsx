@@ -1,10 +1,7 @@
 import React from 'react'
 
 import Head from '@/src/shared/Head/Head'
-import Paragraph from '@/src/shared/Paragraph/Paragraph'
-import Button from '@/src/shared/Button/Button'
 import Title from '@/src/shared/Title/Title'
-import Card from '../Solution/Card/Card'
 import Comment from './Comment/Comment'
 import Image from 'next/image'
 
