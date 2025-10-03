@@ -1,0 +1,67 @@
+export const mockTeam = [
+  {
+    slug: 'olena-kravchenko',
+    name: 'Dr. Olena Kravchenko',
+    position: 'CBT, Emotional Regulation',
+    biography:
+      'For 11+ years I’ve practiced cognitive‑behavioral therapy focused on emotional regulation and everyday communication. I work with couples and individuals on “small frictions” that silently erode closeness: unspoken expectations, defensive replies, and escalating tone. My approach is minimalistic: notice → name → negotiate. In the course I teach tools you can use the same day - how to hear a signal like “I’m anxious,” how to respond without fixing, and how to offer support that actually helps. Students report fewer blow‑ups and more honest talking.',
+    tagline: 'Notice emotions - yours and hers - and respond calmly when things heat up.',
+    approaches: 'CBT, Nonviolent Communication elements.',
+    topics: 'regulation, boundaries, I‑statements, support during stress',
+    education: 'M.A. in Psychology; CBT & NVC certifications.',
+    quote: 'Honesty + warmth = mature intimacy',
+    image: '/team3.png',
+  },
+  {
+    slug: 'maryna-dorosh',
+    name: 'Maryna Dorosh',
+    position: 'Schema Therapy, Boundaries',
+    biography:
+      'For 9 years I’ve helped adults track the “old scripts” that switch on in intimacy: fear of rejection, over‑control, punishing silence. We map your personal yes/no, build agreements that respect both people, and design small rituals of care. After this module, students decline calmly, hear “no” without spiraling, and stop saying yes to what violates their values.',
+    tagline: 'Set boundaries gently - without shame or guilt.',
+    approaches: 'Schema Therapy, psychoeducation.',
+    topics: 'boundaries, shame/guilt, self‑support, agreements',
+    education: 'Certified in Schema Therapy; ethics in counseling.',
+    quote: 'Boundaries don’t push people away - they let you stay close.',
+    image: '/team4.png',
+  },
+  {
+    slug: 'andrii-romaniuk',
+    name: 'Andrii Romaniuk',
+    position: 'Gestalt, Contact & Emotions',
+    biography:
+      'Twelve years in practice. I work with couples stuck in the “pursue/withdraw” loop - one pushes, the other disappears. We learn the cycle of contact: how we approach, avoid, and return to a topic. In the course I model short, warm language for hard moments so you don’t flee into sarcasm or lectures.',
+    tagline: 'Speak human‑to‑human - not accusation‑to‑defense.',
+    approaches: 'Gestalt, here‑and‑now work.',
+    topics: 'conflict, distance, emotional closeness',
+    education: 'Long‑term Gestalt training.',
+    quote: 'Real strength is clarity delivered gently.',
+    image: '/team1.png',
+  },
+  {
+    slug: 'nataliia-sych',
+    name: 'Dr. Nataliia Sych',
+    position: 'CBT, Emotional Regulation',
+    biography:
+      'For 10 years I’ve taught adult sex‑ed with a focus on consent, pace, and safety. We cover why alcohol weakens consent, how to ask kindly, and how to hear “no” without shame. The goal is to make intimacy safe, respectful, and enjoyable for both partners.',
+    tagline: 'Talk about intimacy as simply as any other topic - at a pace that fits both.',
+    approaches: 'Evidence‑based sex education, consent ethics.',
+    topics: 'consent, safe dating, I‑boundaries, body respect',
+    education: 'Certified programs in adult sex‑ed.',
+    quote: 'Consent isn’t a one‑time checkbox - it’s an ongoing conversation.',
+    image: '/team2.png',
+  },
+  {
+    slug: 'petro-danyliuk',
+    name: 'Petro Danyliuk',
+    position: 'Family Consultant, Agreements',
+    biography:
+      'For 14 years I’ve helped families coordinate life - home, money, time, goals - without contempt or score‑keeping. My style is very practical: agreement protocols, weekly check‑ins, and small bonding rituals. In the course you’ll learn to turn conflict into a plan and a date to review that plan.',
+    tagline: 'Replace “who’s to blame?” with “what do we do next?”',
+    approaches: 'Systems consulting, agreement coaching.',
+    topics: 'regulation, boundaries, I‑statements, support during stress',
+    education: 'Family consulting programs',
+    quote: 'An agreement is love in action.',
+    image: '/team5.png',
+  },
+]
