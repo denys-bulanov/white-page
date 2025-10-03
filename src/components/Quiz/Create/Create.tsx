@@ -41,7 +41,7 @@ export default function Create({ setIsAge }: CreateProps) {
   const chooseType = (idx: number) => {
     const currentGirl = girls.find((_, i) => i === idx)
     console.log('currentGirlAge', currentGirl)
-    setAge(currentGirl?.age)
+    setAge(currentGirl?.age || '')
   }
 
   return (

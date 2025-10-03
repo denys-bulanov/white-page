@@ -6,7 +6,7 @@ type ChooseBlockProps = {
   text: string
   src: string
   param: string
-  setParam: Dispatch<SetStateAction<string>>
+  setParam: (val: string) => void
   isAbsolute?: boolean
   fullImage: boolean
 }

@@ -6,8 +6,10 @@ import Head from '@/src/shared/Head/Head'
 import Paragraph from '@/src/shared/Paragraph/Paragraph'
 import Title from '@/src/shared/Title/Title'
 
+type Option = { text: string; src: string }
+
 type BaseStepProps = {
-  options: any
+  options: Option[] | string[]
   head: string
   paragraph1?: string
   paragraph2?: string
@@ -16,7 +18,6 @@ type BaseStepProps = {
   onChange: (val: string) => void
   fullImage?: boolean
 }
-
 const BaseStep = ({ options, head, paragraph1, value, paragraph2, isText, onChange, fullImage = false }: BaseStepProps) => {
   console.log('options', options)
 
@@ -70,24 +71,30 @@ const BaseStep = ({ options, head, paragraph1, value, paragraph2, isText, onChan
           <div className='grid grid-cols-2 gap-5 w-full md:hidden'>
             {options.map((item, idx) => {
               const isLastOdd = options.length % 2 !== 0 && idx === options.length - 1
-              return (
-                <div key={item.text} className={isLastOdd ? 'col-span-2 flex justify-center' : ''}>
-                  <ChooseBlock text={item.text} src={item.src} param={value} setParam={onChange} fullImage={fullImage} />
-                </div>
-              )
+              if (typeof item !== 'string') {
+                return (
+                  <div key={item.text} className={isLastOdd ? 'col-span-2 flex justify-center' : ''}>
+                    <ChooseBlock text={item.text} src={item.src} param={value} setParam={onChange} fullImage={fullImage} />
+                  </div>
+                )
+              }
             })}
           </div>
           <div className='hidden md:flex flex-col items-center gap-5'>
             <div className={`grid grid-cols-${topRow.length} gap-5`}>
-              {topRow.map(item => (
-                <ChooseBlock key={item.text} text={item.text} src={item.src} param={value} setParam={onChange} fullImage={fullImage} />
-              ))}
+              {topRow.map(item => {
+                if (typeof item !== 'string') {
+                  return <ChooseBlock key={item.text} text={item.text} src={item.src} param={value} setParam={onChange} fullImage={fullImage} />
+                }
+              })}
             </div>
             {bottomRow.length > 0 && (
               <div className='flex justify-center gap-5'>
-                {bottomRow.map(item => (
-                  <ChooseBlock key={item.text} text={item.text} src={item.src} param={value} setParam={onChange} fullImage={fullImage} />
-                ))}
+                {bottomRow.map(item => {
+                  if (typeof item !== 'string') {
+                    return <ChooseBlock key={item.text} text={item.text} src={item.src} param={value} setParam={onChange} fullImage={fullImage} />
+                  }
+                })}
               </div>
             )}
           </div>
